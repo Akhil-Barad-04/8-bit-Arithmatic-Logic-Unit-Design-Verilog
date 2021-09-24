@@ -25,9 +25,9 @@ module alu(input [7:0]a,b,
    reg  [15:0]out;
 	always @(command_in,a,b) 
 	begin
-   /*Step1 : Write down the functionality of ALU based on the commands given above.
-	        *Use arithmetic and logic */
-            //--------- write the functionality here -------  //
+   /*functionality of ALU based on the commands given above.
+	         arithmetic and logic */
+           
 		case (command_in)
 			ADD 	: out = a+b;
 			INC 	: out = a+1;
